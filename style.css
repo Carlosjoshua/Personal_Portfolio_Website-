@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #3c4043;
+    /* This is a very light, professional yellow */
+    background-color: #fffdf0; 
+}
+
+/* Navigation - Keeping it clean white or light cream */
+nav {
+    background-color: #ffffff; 
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #5f6368;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover, nav a.active {
+    color: #1a73e8;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dadce0;
+}
+
+/* Main Content Containers */
+.content, section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff; 
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVE GRID GALLERY */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: #f8f9fa;
+}
+
+/* --- CONTACT FORM ALIGNMENT FIXES --- */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Fixes messy alignment from your screenshot */
+}
+
+.form-group label {
+    display: block; /* Puts label above the box */
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #3c4043;
+}
+
+input, textarea {
+    width: 100%; /* Makes all boxes equal width */
+    padding: 12px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    box-sizing: border-box; /* Keeps padding inside the box width */
+    font-family: inherit;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #1a73e8; /* Google Blue focus */
+}
+
+.btn {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
